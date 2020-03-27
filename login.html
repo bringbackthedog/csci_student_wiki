@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+      <!-- Style sheet -->
+      <link rel="stylesheet" href="style.css">
+      <title>CSCI Wiki & Forum</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #157AF6;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #157AF6;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+</style>
+   </head>
+   <body>
+      <!-- Navbar --> 
+      <!-- add .nav-fill to  make buttons take full width in nav bar -->
+      <!-- .navbar-fixed-top keeps bar on top of content  -->
+      <nav class="navbar navbar-dark
+         navbar-fixed-top navbar-expand-md 
+         bg-dark nav-pills">
+         <!-- VIU Logo --> 
+         <!--
+            <li>
+              <a class="navbar-brand" href="#">
+                <img src="img/viulogo.svg" width="30" height="30">
+              </a>
+            </li>
+            -->
+         <!-- Collapsed Toggler Button -->
+         <button class="navbar-toggler btn btn-outline-primary" type="button" data-toggle="collapse" data-target="#collapsedNavbarBtn" aria-controls="collapsedNavbarBtn" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+         </button>
+         <!-- Collapsible section of navbar --> 
+         <!-- add class active to <a> tag to make active --> 
+         <div class="collapse navbar-collapse" id="collapsedNavbarBtn">
+            <div class="navbar-nav w-100">
+               <!-- Navbar buttons --> 
+               <a class="nav-item nav-link active mr-3" href="#"> Questions <span class="sr-only">(current) </span> </a>
+               <a class="nav-item nav-link mx-3" href="#"> Wiki </a>
+               <!-- Search bar in Nav -->
+               <!-- Right align with left margin ocntrol: ml-auto -->  
+               <form class="nav-item w-100 justify-content-md-end form-inline">
+                  <div class="d-flex">
+                     <!-- search box --> 
+                     <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                     <!-- search button --> 
+                     <button class="ml-2 btn btn-outline-primary" type="submit">Search</button>
+                  </div>
+               </form>
+            </div>
+         </div>
+         </div>
+         <!-- [ News Feed ] ... Implement later? 
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                CSci News & Updates
+              </a>
+            </li>
+            -->
+      </nav>
+      <!-- End of Navbar -->
+
+
+      <!-- main section -->
+      <main class="container">
+
+         <!-- Header --> 
+         <div class="d-flex p-2 my-3 bg-primary rounded  ">
+            <h4 class="w-100 text-center text-white ">
+            CSCI Wiki &amp; Forum </h5>
+         </div>
+
+               <form action="action_page.php" method="post">
+                  <div class="imgcontainer">
+                    <img src="img/viu.jpeg" class="avatar">
+                  </div>
+                
+                  <div class="container">
+                    <h1>Login</h1>
+                    <hr>
+                    <label for="uname"><b>Username</b></label>
+                    <input type="text" placeholder="Enter Username" name="uname" required>
+                
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+                
+                    <button type="submit">Login</button>
+                    <label>
+                      <input type="checkbox" checked="checked" name="remember"> Remember me
+                    </label>
+                  </div>
+                
+                  <div class="container" style="background-color:#f1f1f1">
+                    <button type="button" class="cancelbtn">Cancel</button>
+                    <span class="psw">Forgot <a href="#">password?</a></span>
+                  </div>
+                </form>
+
+
+         <!-- TOPICS --> 
+         <div class="container-fluid">
+
+         </div>
+
+         <div>
+
+         </div>
+
+
+      </main>
+      <!-- Optional JavaScript -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+   </body>
+</html>
