@@ -9,8 +9,20 @@
       <!-- Style sheet -->
       <link rel="stylesheet" href="style.css">
       <title>CSCI Wiki & Forum</title>
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <style>
+   </head>
+   <style>
+
+button {
+          background-color: #157AF6;
+          color: white;
+          padding: 6px 6px;
+          
+          border: #ffffff;
+          cursor: pointer;
+         
+          opacity: 0.9;
+        }
+        <style>
         body {font-family: Arial, Helvetica, sans-serif;}
         * {
   box-sizing: border-box;
@@ -87,6 +99,8 @@ img.avatar {
 
    </head>
    <body>
+   </style>
+   <body>
       <!-- Navbar --> 
       <!-- add .nav-fill to  make buttons take full width in nav bar -->
       <!-- .navbar-fixed-top keeps bar on top of content  -->
@@ -111,8 +125,16 @@ img.avatar {
             <div class="navbar-nav w-100">
                <!-- Navbar buttons --> 
                <a class="nav-item nav-link active mr-3" href="index.html"> Home <span class="sr-only">(current) </span> </a>
-               <a class="nav-item nav-link active mr-3" href="#"> Questions</a>
+               <a class="nav-item nav-link active mr-3" href="QuestionList.html"> Questions </a>
                <a class="nav-item nav-link mx-3" href="#"> Wiki </a>
+
+
+               <!-- Login & Signup Buttons --> 
+               
+                   <a class="nav-item nav-link mx-3" href="login.html"> Login </a>
+                   <a class="nav-item nav-link mx-3" href="signup.html"> Signup </a>
+               
+
                <!-- Search bar in Nav -->
                <!-- Right align with left margin ocntrol: ml-auto -->  
                <form class="nav-item w-100 justify-content-md-end form-inline">
@@ -123,6 +145,14 @@ img.avatar {
                      <button class="ml-2 btn btn-outline-primary" type="submit">Search</button>
                   </div>
                </form>
+
+
+
+
+
+
+
+
             </div>
          </div>
          </div>
@@ -145,15 +175,31 @@ img.avatar {
             <h4 class="w-100 text-center text-white ">
             CSCI Wiki &amp; Forum </h5>
          </div>
+         
 
-               <form action="action_page.php" method="post">
-                  <div class="imgcontainer">
-                    <img src="img/viu.jpeg" class="avatar">
+
+         <!-- template for Posts on main page    
+            <div class="media">   
+              <img class="mr-3" src="..." alt="Generic placeholder image">
+                 <div class="media-body row mw-100">
+                      <strong class="col-12"> This is question title ! </strong>
+                        <div class="container-fluid">
+                          <div class="row">
+                            <div class="col-12 text-truncate w-50">   
+            
+                              THis is a question ? Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            
+                            </div>
+                          </div>
+                        </div>   
                   </div>
-                
-                  
-  
-                  <h2>Ask a Question</h2>
+                </div>            
+            -->
+
+
+
+         <!-- QUESTIONS BOX -->
+         <h2>Ask a Question</h2>
                   <p>Be precise, and assume that you are asking another person a query.</p>
                   
                   <div class="container">
@@ -211,6 +257,7 @@ img.avatar {
                   </div>
                 </div>
                 </body>
+         <div class="border rounded">
 
 
          <!-- TOPICS --> 
