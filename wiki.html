@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+      <!-- Style sheet -->
+      <link rel="stylesheet" href="style.css">
+      <title>CSCI Wiki Page</title>
+   </head>
+
+   <body>
+      <!-- Navbar --> 
+      <!-- add .nav-fill to  make buttons take full width in nav bar -->
+      <!-- .navbar-fixed-top keeps bar on top of content  -->
+      <nav class="navbar navbar-dark
+         navbar-fixed-top navbar-expand-md 
+         bg-dark nav-pills">
+         <!-- VIU Logo --> 
+         <!--
+            <li>
+              <a class="navbar-brand" href="#">
+                <img src="img/viulogo.svg" width="30" height="30">
+              </a>
+            </li>
+            -->
+         <!-- Collapsed Toggler Button -->
+         <button class="navbar-toggler btn btn-outline-primary" type="button" data-toggle="collapse" data-target="#collapsedNavbarBtn" aria-controls="collapsedNavbarBtn" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+         </button>
+         <!-- Collapsible section of navbar --> 
+         <!-- add class active to <a> tag to make active --> 
+         <div class="collapse navbar-collapse" id="collapsedNavbarBtn">
+            <div class="navbar-nav w-100">
+               <!-- Navbar buttons --> 
+               
+               <!-- 
+                Do we need a home button here? This is the homepage.
+                <a class="nav-item nav-link mr-3" href="index.html"> Home
+               -->
+               <a class="nav-item nav-link active mr-3" href="QuestionList.html"> Questions </a>
+               <a class="nav-item nav-link mx-3" href="#"> Wiki </a>
+
+
+               <!-- Login & Signup Buttons --> 
+               
+                   <a class="nav-item nav-link mx-3" href="login.html"> Login </a>
+                   <a class="nav-item nav-link mx-3" href="signup.html"> Signup </a>
+               
+
+               <!-- Search bar in Nav -->
+               <!-- Right align with left margin ocntrol: ml-auto -->  
+               <form class="nav-item w-100 justify-content-md-end form-inline">
+                  <div class="d-flex">
+                     <!-- search box --> 
+                     <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                     <!-- search button --> 
+                     <button class="ml-2 btn btn-outline-primary" type="submit">Search</button>
+                  </div>
+               </form>
+
+
+            </div>
+         </div>
+         </div>
+         <!-- [ News Feed ] ... Implement later? 
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                CSci News & Updates
+              </a>
+            </li>
+            -->
+      </nav>
+      <!-- End of Navbar -->
+
+
+      <!-- main section -->
+      <main class="container">
+
+         <!-- Header --> 
+         <div class="d-flex p-2 my-3 bg-primary rounded  ">
+            <h4 class="w-100 text-center text-white ">
+            CSCI Wiki</h5>
+         </div>
+         <!-- End of header -->
+
+
+
+
+
+
+         <!-- Wiki articles accordion -->
+
+        
+
+      
+         <div class="accordion d-flex flex-column flex-wrap" style="height: 65vh" id="accordionExample">        
+           <div class="card">
+             <div class="card-header" id="headingOne">
+               <h2 class="mb-0">
+                 <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                   C++ 
+                 </button>
+               </h2>
+             </div>
+
+             <div id="collapse1" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+               <div class="card-body">
+                 <ul style="list-style-type: none;"> <!-- list-style-type none removes bullets -->
+                    <li> <a href=#> Classes </a> </li>
+                    <li> <a href=#> Arrays </a> </li> 
+                    <li> <a href=#> String </a> </li> 
+                    <li> <a href=#> String stream </a> </li>
+                    <li> <a href=#> Struct </a> </li>
+                  </ul>                                     
+               </div>
+             </div>
+           </div>
+           <div class="card">
+             <div class="card-header" id="headingTwo">
+               <h2 class="mb-0">
+                 <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                   JavaScript
+                 </button>
+               </h2>
+             </div>
+             <div id="collapse2" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+               <div class="card-body">
+                 Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+               </div>
+             </div>
+           </div>
+           <div class="card">
+             <div class="card-header" id="headingThree">
+               <h2 class="mb-0">
+                 <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                   Python
+                 </button>
+               </h2>
+             </div>
+             <div id="collapse3" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+               <div class="card-body">
+                 Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+               </div>
+             </div>
+           </div>
+           <div class="card">
+             <div class="card-header" id="headingOne">
+               <h2 class="mb-0">
+                 <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse4" aria-expanded="true" aria-controls="collapse4">
+                   C++ 
+                 </button>
+               </h2>
+             </div>
+
+             <div id="collapse4" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+               <div class="card-body">
+                 <ul style="list-style-type: none;"> <!-- list-style-type none removes bullets -->
+                    <li> <a href=#> Classes </a> </li>
+                    <li> <a href=#> Arrays </a> </li> 
+                    <li> <a href=#> String </a> </li> 
+                    <li> <a href=#> String stream </a> </li>
+                    <li> <a href=#> Struct </a> </li>
+                  </ul>                                     
+               </div>
+             </div>
+           </div>
+           <div class="card">
+             <div class="card-header" id="headingTwo">
+               <h2 class="mb-0">
+                 <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                   JavaScript
+                 </button>
+               </h2>
+             </div>
+             <div id="collapse5" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+               <div class="card-body">
+                 Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+               </div>
+             </div>
+           </div>
+           <div class="card">
+             <div class="card-header" id="headingThree">
+               <h2 class="mb-0">
+                 <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+                   Python
+                 </button>
+               </h2>
+             </div>
+             <div id="collapse6" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+               <div class="card-body">
+                 Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+               </div>
+             </div>
+           </div>
+           <div class="card">
+             <div class="card-header" id="headingOne">
+               <h2 class="mb-0">
+                 <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse7" aria-expanded="true" aria-controls="collapse7">
+                   C++ 
+                 </button>
+               </h2>
+             </div>
+
+             <div id="collapse7" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+               <div class="card-body">
+                 <ul style="list-style-type: none;"> <!-- list-style-type none removes bullets -->
+                    <li> <a href=#> Classes </a> </li>
+                    <li> <a href=#> Arrays </a> </li> 
+                    <li> <a href=#> String </a> </li> 
+                    <li> <a href=#> String stream </a> </li>
+                    <li> <a href=#> Struct </a> </li>
+                  </ul>                                     
+               </div>
+             </div>
+           </div>
+           <div class="card">
+             <div class="card-header" id="headingTwo">
+               <h2 class="mb-0">
+                 <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse8" aria-expanded="false" aria-controls="collapse8">
+                   JavaScript
+                 </button>
+               </h2>
+             </div>
+             <div id="collapse8" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+               <div class="card-body">
+                 Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+               </div>
+             </div>
+           </div>
+           <div class="card">
+             <div class="card-header" id="headingThree">
+               <h2 class="mb-0">
+                 <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse9" aria-expanded="false" aria-controls="collapse9">
+                   Python
+                 </button>
+               </h2>
+             </div>
+             <div id="collapse9" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+               <div class="card-body">
+                 Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+               </div>
+             </div>
+           </div>
+           <div class="card">
+             <div class="card-header" id="headingOne">
+               <h2 class="mb-0">
+                 <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse10" aria-expanded="true" aria-controls="collapse10">
+                   C++ 
+                 </button>
+               </h2>
+             </div>
+
+             <div id="collapse10" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+               <div class="card-body">
+                 <ul style="list-style-type: none;"> <!-- list-style-type none removes bullets -->
+                    <li> <a href=#> Classes </a> </li>
+                    <li> <a href=#> Arrays </a> </li> 
+                    <li> <a href=#> String </a> </li> 
+                    <li> <a href=#> String stream </a> </li>
+                    <li> <a href=#> Struct </a> </li>
+                  </ul>                                     
+               </div>
+             </div>
+           </div>
+           <div class="card">
+             <div class="card-header" id="headingTwo">
+               <h2 class="mb-0">
+                 <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse11" aria-expanded="false" aria-controls="collapse11">
+                   JavaScript
+                 </button>
+               </h2>
+             </div>
+             <div id="collapse11" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+               <div class="card-body">
+                 Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+               </div>
+             </div>
+           </div>
+           <div class="card">
+             <div class="card-header" id="headingThree">
+               <h2 class="mb-0">
+                 <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse12" aria-expanded="false" aria-controls="collapse12">
+                   Python
+                 </button>
+               </h2>
+             </div>
+             <div id="collapse12" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+               <div class="card-body">
+                 Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+               </div>
+             </div>
+           </div>
+
+
+         </div>
+
+      
+          
+
+
+
+
+
+
+      </main>
+      <!-- Optional JavaScript -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+   </body>
+</html>
