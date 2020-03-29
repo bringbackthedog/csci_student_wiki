@@ -88,12 +88,23 @@
 
 
 
-
-
-
          <!-- Wiki articles accordion -->
+         <div class="accordion d-flex flex-md-wrap flex-column" id="wikiAccordion">        
 
-         <div class="accordion d-flex flex-md-wrap vh-100 flex-column" style="height: 65vh" id="accordionExample">        
+            <!-- 
+               THIS SCRIPT NEEDS TO RUN HERE. DONT MOVE THIS BLOCK!!
+               add max height depending on viewport.
+            -->
+            <script>
+                 //if viewport is greater than md (ie:768px), 
+                 //we want the max height to be the size of the viewport.
+                 //This will cause columns to wrap, 
+                 //preventing wrapping on smaller screens, which look ughh! :D
+                 vw = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+                 accordion = document.getElementById("wikiAccordion");
+                 if(vw >= 768) { accordion.classList.add("vh-100"); } 
+           </script>
+
 
            <div class="card">
               <div class="card-header" id="headingOne">
@@ -105,7 +116,7 @@
                 </h2>
               </div>       
 
-            <div id="collapse1" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+            <div id="collapse1" class="collapse" aria-labelledby="headingOne" data-parent="#wikiAccordion">
                 <div class="card-body">
                   <ul style="list-style-type: none;"> <!-- list-style-type none removes bullets -->
                      <li> <a href=#> Classes </a> </li>
@@ -128,7 +139,7 @@
                  </button>
                </h2>
              </div>
-             <div id="collapse2" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+             <div id="collapse2" class="collapse" aria-labelledby="headingTwo" data-parent="#wikiAccordion">
                <div class="card-body">
                                    <ul style="list-style-type: none;"> <!-- list-style-type none removes bullets -->
                      <li> <a href=#> Classes </a> </li>
@@ -149,7 +160,7 @@
                  </button>
                </h2>
              </div>
-             <div id="collapse3" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+             <div id="collapse3" class="collapse" aria-labelledby="headingThree" data-parent="#wikiAccordion">
                <div class="card-body">
                                    <ul style="list-style-type: none;"> <!-- list-style-type none removes bullets -->
                      <li> <a href=#> Classes </a> </li>
@@ -170,7 +181,7 @@
                </h2>
              </div>
 
-             <div id="collapse4" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+             <div id="collapse4" class="collapse" aria-labelledby="headingOne" data-parent="#wikiAccordion">
                <div class="card-body">
                  <ul style="list-style-type: none;"> <!-- list-style-type none removes bullets -->
                     <li> <a href=#> Classes </a> </li>
@@ -190,7 +201,7 @@
                  </button>
                </h2>
              </div>
-             <div id="collapse5" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+             <div id="collapse5" class="collapse" aria-labelledby="headingTwo" data-parent="#wikiAccordion">
                <div class="card-body">
                                    <ul style="list-style-type: none;"> <!-- list-style-type none removes bullets -->
                      <li> <a href=#> Classes </a> </li>
@@ -210,7 +221,7 @@
                  </button>
                </h2>
              </div>
-             <div id="collapse6" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+             <div id="collapse6" class="collapse" aria-labelledby="headingThree" data-parent="#wikiAccordion">
                <div class="card-body">
                                    <ul style="list-style-type: none;"> <!-- list-style-type none removes bullets -->
                      <li> <a href=#> Classes </a> </li>
@@ -231,7 +242,7 @@
                </h2>
              </div>
 
-             <div id="collapse7" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+             <div id="collapse7" class="collapse" aria-labelledby="headingOne" data-parent="#wikiAccordion">
                <div class="card-body">
                  <ul style="list-style-type: none;"> <!-- list-style-type none removes bullets -->
                     <li> <a href=#> Classes </a> </li>
@@ -251,7 +262,7 @@
                  </button>
                </h2>
              </div>
-             <div id="collapse8" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+             <div id="collapse8" class="collapse" aria-labelledby="headingTwo" data-parent="#wikiAccordion">
                <div class="card-body">
                                    <ul style="list-style-type: none;"> <!-- list-style-type none removes bullets -->
                      <li> <a href=#> Classes </a> </li>
@@ -271,7 +282,7 @@
                  </button>
                </h2>
              </div>
-             <div id="collapse9" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+             <div id="collapse9" class="collapse" aria-labelledby="headingThree" data-parent="#wikiAccordion">
                <div class="card-body">
                                    <ul style="list-style-type: none;"> <!-- list-style-type none removes bullets -->
                      <li> <a href=#> Classes </a> </li>
@@ -292,7 +303,7 @@
                </h2>
              </div>
 
-             <div id="collapse10" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+             <div id="collapse10" class="collapse" aria-labelledby="headingOne" data-parent="#wikiAccordion">
                <div class="card-body">
                  <ul style="list-style-type: none;"> <!-- list-style-type none removes bullets -->
                     <li> <a href=#> Classes </a> </li>
@@ -312,7 +323,7 @@
                  </button>
                </h2>
              </div>
-             <div id="collapse11" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+             <div id="collapse11" class="collapse" aria-labelledby="headingTwo" data-parent="#wikiAccordion">
                <div class="card-body">
                                    <ul style="list-style-type: none;"> <!-- list-style-type none removes bullets -->
                      <li> <a href=#> Classes </a> </li>
@@ -332,7 +343,7 @@
                  </button>
                </h2>
              </div>
-             <div id="collapse12" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+             <div id="collapse12" class="collapse" aria-labelledby="headingThree" data-parent="#wikiAccordion">
                <div class="card-body">
                                    <ul style="list-style-type: none;"> <!-- list-style-type none removes bullets -->
                      <li> <a href=#> Classes </a> </li>
@@ -346,15 +357,9 @@
            </div>
 
 
-         </div>
+         </div> <!-- END OF Wiki articles accordion -->
 
       
-          
-
-
-
-
-
 
       </main>
       <!-- Optional JavaScript -->
