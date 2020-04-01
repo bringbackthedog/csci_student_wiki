@@ -12,17 +12,24 @@
    </head>
    <style>
 
-button {
-          background-color: #157AF6;
-          color: white;
-          padding: 6px 6px;
-          
-          border: #ffffff;
-          cursor: pointer;
-         
-          opacity: 0.9;
-        }
 
+
+        button {
+  background-color: #157AF6;
+  color: white;
+  padding: 14px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+        hr {
+  border-top: 1px solid lightgrey;
+}
    </style>
    <body>
       <!-- Navbar --> 
@@ -126,38 +133,55 @@ button {
 
 
          <!-- QUESTIONS BOX -->
-         <h2>List Of Questions</h2>
-        
-
-            <div class="alert alert-secondary" role="alert" >
-              <a href="FakeAnswer.html" <b>Q1.</b> I Don't know what 
-              my instructoring teaching in CSCI 160, Please help me guys. </a>
-             </div>
-             <div class="alert alert-secondary" role="alert">
-               <a href="#" <b>Q2.</b> How to write C code. </a>
-             </div>
-             <div class="alert alert-secondary" role="alert">
-               <a href="#"  <b>Q3.</b> How to convert INT to String using JAVA. </a>
-             </div>
-             <div class="alert alert-secondary" role="alert">
-               <a href="#"  <b>Q4.</b> How to connect SQL with C++. </a>
-             </div>
-             <div class="alert alert-secondary" role="alert">
-               <a href="#" <b>Q5.</b> Can someone give me sytax for regular
-               expressions using BASH </a>
-             </div>
-             <div class="alert alert-secondary" role="alert">
-               <a href="#"<b>Q6.</b> How to access CSCI machines from home. </a>
-             </div>
+         <h2>I Don't know what 
+          my instructoring teaching in CSCI 160, Please help me guys.</h2>
          <!-- TOPICS --> 
          <div class="container-fluid">
-
+          <div class="container">
+            <hr>
          </div>
 
-         <div>
-
-         </div>
-
+         <div class="alert alert-secondary" role="alert" >
+        <p>This is my first question on CSCI Student Wiki, My instructor literally sucks
+          and I dont know what he is trying to study. I am suffering from dilema where
+          I dont know what to do with my life. I wanna die please help me guys.
+          Can someone fix this code, I dont know what is the error.
+        </p>
+        </div>
+        <div class="alert alert-success" role="alert" >
+          <p5>
+            #include <iostream> <br>
+              #include <string> <br>
+              
+              using namespace std; <br>
+              
+              int main() <br>
+              { <br>
+                  int i , n  , j; <br>
+                  cout<<"Input the number of the products: "<<endl; <br>
+                  cin>>n; <br>
+                  string Product [n]; <br>
+                  double Price[n]; <br>
+                  for(i=1;i<=n;i++){ <br>
+              
+              cout<< "Input the name of product"<<i<<" :"<<endl; <br>
+                      cin>>Product[i]; <br>
+                      cout<<"Input the price of product "<<i<<" :"<<endl; <br>
+                      cin>>Price[i]; <br>
+                  } <br>
+                  for(j=1;j<=n;j++){ <br>
+                      cout<< "Product "<<Product[i]<<" costs: "<< Price[i]<<" $."<< endl; <br>
+              } <br>
+              return 0; <br>
+              } <br>
+          </p5>
+        </div>
+        <hr>
+        <h2>Post a Reply</h2>
+        <textarea id="w3mission" rows="6" cols="133">
+        Please Post your reply only if you know the answer.
+          </textarea>
+        <button type="submit">Post</button>
 
       </main>
       <!-- Optional JavaScript -->
