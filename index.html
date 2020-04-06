@@ -1,16 +1,50 @@
 <!doctype html>
 <html lang="en">
    <head>
+    
+
+<link rel='icon' href='img/viulogo.svg' type='image/x-icon'/ >
       <!-- Required meta tags -->
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
       <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
       <!-- Style sheet -->
       <link rel="stylesheet" href="style.css">
+          
       <title>CSCI Wiki & Forum</title>
-   </head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+      
+      <style>
+  body {
+        background: #ffd89b;
+        background: -webkit-linear-gradient(to right, #ffd89b, #19547b);
+        background: linear-gradient(to right, #ffd89b, #19547b);
+        min-height: 100vh;
+      }
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+ 
+}
 
+/* Copy Right Footer */
+.footer-copyright {	background: #2222;	padding: 5px 0;}
+.footer-copyright .logo {    display: inherit;}
+.footer-copyright nav {    float: right;    margin-top: 5px;}
+.footer-copyright nav ul {	list-style: none;	margin: 0;	padding: 0;}
+.footer-copyright nav ul li {	border-left: 1px solid #505050;	display: inline-block;	line-height: 12px;	margin: 0;	padding: 0 8px;}
+.footer-copyright nav ul li a{	color: #969696;}
+.footer-copyright nav ul li:first-child {	border: medium none;	padding-left: 0;}
+.footer-copyright p {	color: #000000;	margin: 2px 0 0;}
+</style>
+
+   </head>
+   
    <body>
       <!-- Navbar --> 
       <!-- add .nav-fill to  make buttons take full width in nav bar -->
@@ -76,7 +110,7 @@
       </nav>
       <!-- End of Navbar -->
       
-      <img src="img/header.png" width="1500" height="500">
+      <img src="img/header.png" class = "center" >
       <!-- main section -->
       <main class="container vh-100">
 
@@ -195,7 +229,7 @@
               </div>    <!-- END WIKI PREVIEW BOX  --> 
 
 
-
+              
 
 
 
@@ -205,14 +239,85 @@
             
             </div>    <!-- ^^ END TOP ROW ^^ -->
 
-            <!-- BOTTOM ROW -->
-            <div class="row h-25 mt-2">
-              <div class="col-md bg-primary border border-primary rounded-lg mx-2 
-              d-flex justify-content-center ">
-                    <h5 class="text-light text-monospace font-weight-bold"> VIU CSCI Updates</h5>
+            <footer id="footer" class="footer-1 m-5">
+              <div class="main-footer widgets-dark typo-light">
+              <div class="container">
+              <div class="row">
+                
+              <div class="col-xs-12 col-sm-6 col-md-3">
+              <div class="widget subscribe no-box">
+              <h5 class="widget-title">ABOUT US<span></span></h5>
+              <p>CSCI Student Wiki is developed by CSCI Students as a part of project for CSCI
+                          375. Here you can ask and answer any question or search
+                          for any relevant CSCI Topic.</p>
               </div>
-            </div>    <!-- ^^ END BOTTOM 
-            ROW ^^ -->
+              </div>
+              
+              <div class="col-xs-12 col-sm-6 col-md-3">
+              
+              <div class="widget no-box">
+              <h5 class="widget-title">Quick Links<span></span></h5>
+              <ul class="thumbnail-widget">
+              <li>
+                  <b>
+              <div class="thumb-content"><a href="login.html">Login</a></div>	
+              </li>
+              <li>
+              <div class="thumb-content"><a href="QuestionList.html">Questions</a></div>	
+              </li>
+              <li>
+              <div class="thumb-content"><a href="Wiki.html">Wiki Posts</a></div>	
+              </li>
+              <li>
+              <div class="thumb-content"><a href="DemoWiki.html">C++</a></div>	
+              </li>
+              <li>
+              <div class="thumb-content"><a href="DemoWiki.html">Java</a></div>	
+              </li>
+              </b>
+              </li>
+              </ul>
+              </div>
+              </div>
+              
+              <div class="col-xs-12 col-sm-6 col-md-3">
+              <div class="widget no-box">
+              <h5 class="widget-title">Get Started<span></span></h5>
+              <p>Sign Up and connect with other CSCI students and participate in QA.</p>
+              <div >
+                <a class="btn btn-primary mb-2 btn btn-outline-white border border-info" 
+                    href="Signup.html" role="button">Register Now </a>
+              </div>
+              </div>
+              </div>
+              
+              <div class="col-xs-12 col-sm-6 col-md-3">
+              
+              <div class="widget no-box">
+              <h5 class="widget-title">Contact Us<span></span></h5>
+              <h6><b>Vancouver Island University</b></h6>
+              <p>
+              900 Fifth St, </br> Nanaimo, BC V9R 5S5</p>
+              <p>(250).753.3245</p>
+              <p><a href="mailto:study@viu.ca" title="glorythemes">study@viu.ca</a></p>
+
+              </div>
+              </div>
+              
+              </div>
+              </div>
+              </div>
+                
+              <div class="footer-copyright">
+              <div class="container">
+              <div class="row">
+              <div class="col-md-12 text-center">
+              <p>Copyright CSCI Student Wiki © 2020. All rights reserved.</p>
+              </div>
+              </div>
+              </div>
+              </div>
+              </footer>
             
 
 
@@ -228,10 +333,5 @@
 
 
       </main>
-      <!-- Optional JavaScript -->
-      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
    </body>
 </html>
